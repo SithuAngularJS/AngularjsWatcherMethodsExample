@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApplication">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+    <meta charset="utf-8">
+    <title>$parse Service</title>
+</head>
+
+<body ng-controller="MyController">
+    <h1>$watch Example</h1>
+    <h5>Number: {{aNumber}}{{typeOfNumber}}</h5>
+    <button ng-click="addOne()">+1</button>
+    <br/>
+    <br/>
+    <hr>
+
+    <h1>$watchCollection Example</h1>
+    <h5>Array Collection: {{numArray}}</h5>
+    <h5>Length of Array: {{numArrayLength}}</h5>
+    <input type="number" ng-model="newNumber">
+    <button ng-click="pushNumber()">push</button>
+    <br/>
+    <br/>
+    <hr>
+    <h1>$watchGroup Example</h1>
+    <h5>Number 1: {{number1}}{{typeOfNumber1}}</h5>
+    <h5>Number 2: {{number2}}{{typeOfNumber2}}</h5>
+    <h5>Number 3: {{number3}}{{typeOfNumber3}}</h5>
+    <button ng-click="addOneAll()">+1 All</button>
+    <script src="app.js"></script>
+</body>
+
+</html>
